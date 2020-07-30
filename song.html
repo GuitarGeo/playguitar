@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn a Song</title>
+        <script>
+            function search()
+            {
+                let sq = document.querySelector("#sq").value;
+                alert('You are being redirected to find a tab for '+ sq);
+            }
+        </script>
+    </head>
+     <body>
+        <h1> <!--1-->
+            Play Guitar
+        </h1>
+        <ul>
+            <li> <a href="book.html">  Book Lesson | </a></li>
+            <li> <a href="chord.html"> Find Chord | </a></li>
+            <li class="selected"> Learn Song </li>
+        </ul>
+        <a href="index.html">
+            <button type="button" class="btn btn-secondary btn-sm">Home</button>
+            <button type="button" class="btn btn-secondary btn-sm">Register Now</button>
+        </a>
+
+        <form action="https://www.ultimate-guitar.com/search.php?" method ="get" onsubmit='search()' target="_blank">
+            <input name="value" id ="sq" type="text">
+            <input type="submit" value = "Search for Song">
+        </form>
+    </body>
+
+</html>

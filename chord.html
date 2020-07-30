@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Look Up a Chord</title>
+        <script>
+            function search()
+            {
+                let sq = document.querySelector("#sq").value;
+                alert('You are being redirected to find '+ sq +' chord');
+            }
+        </script>
+        <script>(function(d, s, id) {
+            var js, ucjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//static.uberchord.com/uberchord-embed-sdk.js";
+            ucjs.parentNode.insertBefore(js, ucjs);
+            }(document, 'script', 'uberchord-jssdk'));
+          </script>
+    </head>
+    <body>
+        <h1>
+            Play Guitar
+        </h1>
+
+        <ul>
+            <li> <a href="book.html">  Book Lesson |</a></li>
+            <li class="selected">Find Chord | </li>
+            <li><a href="song.html"> Learn Song</a></li>
+        </ul>
+        <a href="index.html">
+            <button type="button" class="btn btn-secondary btn-sm">Home</button>
+            <button type="button" class="btn btn-secondary btn-sm">Register Now</button>
+        </a>
+        <form action="https://jguitar.com/chordsearch?" method ="get" onsubmit='search()' target="_blank">
+            <input name="chordsearch" id ="sq" type="text">
+            <input type="submit" value = "Search for Chord">
+        </form>
+            <form action="https://api.uberchord.com/v1/embed/chords" method ="get" target="chordapi">
+            <input name="names" type="text">
+            <input type="submit" value = "Search Chord API">
+        </form>
+        <iframe name="chordapi" style="background: white" data-no-icon="1" width="300" height="300">
+        </iframe>
+    </body>
+
+</html>

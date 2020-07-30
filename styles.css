@@ -1,0 +1,30 @@
+.selected
+{
+    color: green;
+    font-size: large;
+    font-weight: bold;
+}
+
+body
+{
+  background-color: black;
+  color: white;
+  margin: 25px;
+}
+
+li
+{
+  display: inline;
+}
+
+.card
+{
+  background-color: grey;
+  border-color: white;
+}
+
+.home{
+    border-color: white;
+}
+
+
