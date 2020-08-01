@@ -8,6 +8,7 @@
 body
 {
   background-image: url("img/colorfulguitar.jpg");
+  background-size: cover;
   background-color: black;  
   color: white;
   margin: 25px;
