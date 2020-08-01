@@ -5,6 +5,11 @@
     font-weight: bold;
 }
 
+.nav
+{
+background-color: black; 
+}
+
 body
 {
   background-image: url("img/colorfulguitar.jpg");
