@@ -7,10 +7,12 @@
 
 .nav
 {
-max-width: 700px;    
-background-color: grey; 
-margin: auto;
-/*padding-top: 25px;*/
+max-width: 500px;    
+background-color: white; 
+/*margin: auto;*/
+padding-top: 25px;
+padding-bottom: 25px;
+    
 }
 
 body
