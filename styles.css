@@ -10,8 +10,9 @@
 max-width: 500px;    
 background-color: white; 
 /*margin: auto;*/
-padding-top: 10px;
-padding-bottom: 5px;
+padding-top: 5px;
+padding-bottom: 1px;
+padding-left: 1px;
     
 }
 
